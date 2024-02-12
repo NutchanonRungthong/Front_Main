@@ -9,7 +9,7 @@ var bodyParser = require('body-parser')
 
 
 
-const base_url = "http://localhost:3000"
+const base_url = "http://10.104.6.177:3000"
 
 
 app.set('view engine', 'ejs')
@@ -17,10 +17,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended:false}))
 
 
-app.set("views",path.join(_dirname,"/public/views"));
-app.set("view engine","ejs");
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.static(__dirname + '/public/views'))
 
 app.get('/', async(req,res)=>{
    try{
