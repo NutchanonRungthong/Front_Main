@@ -8,7 +8,7 @@ var bodyParser = require('body-parser')
 
 
 
-const base_url = "http://10.104.6.177:3000"
+const base_url = "http://10.104.6.177"
 
 
 app.set('view engine', 'ejs')
