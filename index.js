@@ -6,8 +6,8 @@ var bodyParser = require('body-parser')
 
 
 
-//const base_url = "http://localhost:3000"
-const base_url = "http://node56373-noderesza.proen.app.ruk-com.cloud:11567"
+const base_url = "http://localhost:3000"
+//const base_url = "http://node56373-noderesza.proen.app.ruk-com.cloud:11567"
 
 app.set('views', path.join(__dirname, "/public/views"))
 app.set('view engine', 'ejs')
